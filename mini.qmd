@@ -1,0 +1,29 @@
+---
+title: LimeSDR Mini
+---
+
+## V1.x
+
+The version number should be silk-screened near the USB connector. **Mine is a v1.2**.
+
+- [v1.1 hardware description](https://wiki.myriadrf.org/LimeSDR-Mini_v1.1_hardware_description)
+- [v1.2 hardware descrption](https://wiki.myriadrf.org/LimeSDR-Mini_v1.2_hardware_description)
+
+### Frequency range
+
+Overall range 10 MHz to 3.5 GHz
+
+- Use TX1_1 RF output for 2GHz - 3.5GHz frequency range
+- Use TX1_2 RF output for 10MHz - 2GHz frequency range
+- Use RX1_H RF input for 2GHz - 3.5GHz frequency range
+- Use RX1_W RF input for 10MHz - 2GHz frequency range
+
+
+### Tx Frequency response
+
+- https://wiki.batc.org.uk/LimeSDR_Mini_Output_Power_Levels
+
+
+## 
+
+- [Antenna Testing with LimeSDR mini](https://medium.com/home-wireless/testing-antennas-with-the-limesdr-mini-98b59b99c8b9)

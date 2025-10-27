@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "LimeSDR Information"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: mini.qmd
+        text: LimeSDR Mini
+      - href: LimeSDR
+        text: limesdr.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+

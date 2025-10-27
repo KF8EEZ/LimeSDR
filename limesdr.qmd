@@ -1,0 +1,34 @@
+---
+title: LimeSDR
+---
+
+I have a v1.4s with USB-A connector
+
+- https://limemicro.com/boards/limesdr/
+- https://www.crowdsupply.com/lime-micro/limesdr
+
+https://discourse.myriadrf.org/t/rf-connection-10-u-fl-connectors-6-rx-4-tx/305/9
+Continuous frequency range: 100 kHz – 3.8 GHz
+
+## HF performance 
+
+https://wiki.myriadrf.org/LimeSDR_HF_Performance
+
+
+## 3D printed cases
+
+### USB-A connector
+
+- https://www.thingiverse.com/thing:1957319 (only exposes 4 sma)
+  - From: https://sdrgps.blogspot.com/2016/12/gps-fake-out-with-limesdr.html
+- https://www.thingiverse.com/thing:2206777 (no fan)
+
+
+### USB-B connector
+
+- https://www.thingiverse.com/thing:2548364 (fan)
+- https://www.thingiverse.com/thing:2160863 (alternative lid)
+- https://www.thingiverse.com/thing:2840964
+
+- https://www.thingiverse.com/thing:2866383 (larger with fan
+

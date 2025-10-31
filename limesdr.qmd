@@ -4,11 +4,45 @@ title: LimeSDR
 
 I have a v1.4s with USB-A connector
 
-- https://limemicro.com/boards/limesdr/
-- https://www.crowdsupply.com/lime-micro/limesdr
+- Wiki: <https://wiki.myriadrf.org/LimeSDR-USB>
+- Github: <https://github.com/myriadrf/LimeSDR-USB>
+- QuickStart: <https://wiki.myriadrf.org/LimeSDR_Quick_Start>
+- Marketing: <https://limemicro.com/boards/limesdr/>
+- CrowdSupply: <https://www.crowdsupply.com/lime-micro/limesdr>
 
 https://discourse.myriadrf.org/t/rf-connection-10-u-fl-connectors-6-rx-4-tx/305/9
 Continuous frequency range: 100 kHz – 3.8 GHz
+
+The LimeSDR uses a LMS7202M sdr chip documented here <https://github.com/myriadrf/LMS7002M-docs>
+
+This discussion link <https://discourse.myriadrf.org/t/rf-connection-10-u-fl-connectors-6-rx-4-tx/305/9> has information about the RF matching network used on the LimeSDR:
+
+::: {.callout-tip}
+LMS7002M has 3x Rceiver RF inputs and 2x Tx output per channel. By design receiver inputs are tuned as follows:
+
+LNAL - from 0.1 MHz to 2000 MHz. Gives a noise figure <2dB.
+LNAH - from 1500 MHz to 3800 MHz. Gives a noise figure <3dB.
+LNAW - from 0.1 MHz to 3800 MHz. Gives a noise figure 5-7dB. Usually used for sniffing.
+Transmitter output bu design are similar and supported frequency range is form 0.1-3800 MHz.
+
+However, every RF input/output is combined with RF matching network which might be band specific. On the LimeSDR the RF inputs/outputs are tuned for:
+
+LNAL - is tuned for 800 - 900 MHz (3GPP Band V).
+LNAH - is tuned for 1900 MHz (3GPP Band I).
+LNAW - has broadband matching up to 2000 MHz.
+TXout1 - is tuned for 2600 MHz (3GPP Band VII) .
+TXout2 - has broadband matching up to 2000 MHz.
+The matching network includes broadband Balun + network for fine tune for specific band, hence can be easily modified.
+
+@ricsi
+
+The LMS7002M synthesizer frequency range is from 30 MHz - 3800 MHz. We are using internal NCO to get us to 100 kHz region.
+:::
+
+## Connctors
+
+
+
 
 ## HF performance 
 
